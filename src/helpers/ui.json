@@ -2,9 +2,12 @@
 
 
   "colorSchemma": {
-    "colorPrimary": "#000",
-    "textHeaderColor": "#bbbbbb",
-    "textHeaderOne":"#5d17ea"
+    "colorPrimary": "#eeeeff",
+    "colorSecondary": "#01B1F0",
+    "colorTerciary": "#000000",
+    "textColorOne": "#000000dd",
+    "textHeaderColor": "#00000099",
+    "textHeaderOne":"#000000dd"
   },
   "header":{
     "icons":{

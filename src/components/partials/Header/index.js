@@ -7,24 +7,38 @@ function Header() {
   return (
     <>
       <HeaderArea>
+        <div>
+          <a href="/whatsapp">COMPRE PELO WHATSAPP</a>
+          <a href="/whatsapp">ATENDIMENTO</a>
+          <a href="/whatsapp">SAC</a>
+        </div>
         <nav>
           <div>
             <Link to="/">
-              <img src={imgLogo} />
+              <img src={imgLogo} alt="Logo" />
             </Link>
             <ul>
               <li>
-                <Link to="/sobre">O que somos?</Link>
+                <Link to="/academia">Academia</Link>
               </li>
               <li>
-                <Link to="/eventos">Eventos disponíveis</Link>
+                <Link to="/acessorios">Acessórios</Link>
               </li>
               <li>
-                <Link to="/ferramentas">Ferramentas para o uso</Link>
+                <Link to="/futebol">Futebol</Link>
+              </li>
+              <li>
+                <Link to="/futevolei">Futevôlei</Link>
+              </li>
+              <li>
+                <Link to="/handebol">Handebol</Link>
+              </li>
+              <li>
+                <Link to="/volei">Vôlei</Link>
               </li>
             </ul>
           </div>
-          <Link to="/eventos">Assistir</Link>
+          <Link to="/">Parceiros</Link>
         </nav>
       </HeaderArea>
     </>

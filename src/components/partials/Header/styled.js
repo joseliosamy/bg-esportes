@@ -5,12 +5,27 @@ const { colorSchemma } = ui;
 
 export const HeaderArea = styled.header`
   width: 100%;
-  height: 70px;
+  height: 100%;
   border-bottom: 1px solid #d1d1d11f;
-  background-color: #00000044;
+  background-color: #fff;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: ${colorSchemma.colorSecondary};
+    a {
+      font-size: 0.8rem;
+      margin: 0 25px;
+      color: #fff;
+      &:hover {
+        color: ${colorSchemma.textHeaderOne};
+      }
+    }
+  }
   nav {
     width: 80%;
-    height: 100%;
+    height: 70px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -26,6 +41,12 @@ export const HeaderArea = styled.header`
         img {
           width: 50px;
         }
+        span {
+          margin-left: 5px;
+          color: #00000099;
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
       }
       ul {
         height: 100%;
@@ -40,7 +61,7 @@ export const HeaderArea = styled.header`
             align-items: center;
             justify-content: center;
             font-size: 0.9rem;
-            color: ${colorSchemma.textHeaderColor};
+            color: #00000099;
             font-weight: 600;
             transition: 180ms;
             position: relative;
@@ -56,15 +77,17 @@ export const HeaderArea = styled.header`
               transition: 100ms ease-out;
             }
             &:hover {
-              color: #fff;
+              color: ${colorSchemma.textHeaderOne};
               ::after {
                 width: 100%;
               }
             }
             &:focus {
-              color: ${colorSchemma.textHeaderOne};
+              color: #23163f;
               ::after {
-                background-color: ${colorSchemma.textHeaderOne};
+                height: 3px;
+                width: 100%;
+                background-color: #23163f;
               }
             }
           }
@@ -76,13 +99,14 @@ export const HeaderArea = styled.header`
       border: 1px solid #bbb;
       border-radius: 15px;
       color: #fff;
+      background-color: ${colorSchemma.colorSecondary};
       font-weight: 600;
       font-size: 0.9rem;
       transition: 180ms;
       &:hover {
         color: ${colorSchemma.textHeaderOne};
         border-color: ${colorSchemma.textHeaderOne};
-        background-color: #23163f;
+        background-color: #fff;
       }
     }
   }

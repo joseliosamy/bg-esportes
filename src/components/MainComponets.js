@@ -11,6 +11,16 @@ export const Site = styled.div`
 `;
 
 export const Delimiters = styled.div`
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+`;
+
+export const PromotionsArea = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+  }
 `;
